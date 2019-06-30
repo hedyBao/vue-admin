@@ -4,6 +4,9 @@ import Home from './views/Home.vue'
 import Main from './views/Main.vue'
 import Table from './views/nav1/Table.vue'
 import Form from './views/nav1/Form.vue'
+import Permission from './views/nav1/Permission.vue'
+
+import Role from './views/nav1/Role.vue'
 import user from './views/nav1/user.vue'
 import Page4 from './views/nav2/Page4.vue'
 import Page5 from './views/nav2/Page5.vue'
@@ -31,8 +34,11 @@ let routes = [
         iconCls: 'el-icon-message',//图标样式class
         children: [
             { path: '/main', component: Main, name: '主页', hidden: true },
-            { path: '/table', component: Table, name: 'Table' },
-            { path: '/form', component: Form, name: 'Form' },
+            { path: '/table', component: Table, name: '用户角色表' },
+            // { path: '/form', component: Form, name: 'Form' },
+            { path: '/role', component: Role, name: '角色权限表' },
+            { path: '/per', component: Permission, name: '权限管理表' },
+
             { path: '/user', component: user, name: '列表' },
         ]
     },
