@@ -75,7 +75,7 @@
 	export default {
 		data() {
 			return {
-				sysName:'VUEADMIN',
+				sysName:'权限管理系统',
 				collapsed:false,
 				sysUserName: '',
 				sysUserAvatar: '',
@@ -132,7 +132,7 @@
 				this.sysUserName = user.name || '';
 				this.sysUserAvatar = user.avatar || '';
 			}
-
+Git
 		}
 	}
 
@@ -159,6 +159,7 @@
 					cursor: pointer;
 					color:#fff;
 					img {
+
 						width: 40px;
 						height: 40px;
 						border-radius: 20px;
@@ -168,6 +169,7 @@
 				}
 			}
 			.logo {
+
 				//width:230px;
 				height:60px;
 				font-size: 22px;
