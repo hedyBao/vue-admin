@@ -1,12 +1,15 @@
 import axios from 'axios';
 
-let base = 'http://localhost:8080';
+//let base = 'http://localhost:8080';
+let base =process.env.NODE_ENV == 'development' ? 'http://localhost:8080' : 'http://47.103.2.29:8080';
 
 
 //export const addUser = params => { return axios.post(`${base}/addUser`, params).then(res => res.data); };
 
 
-export const requestLogin = params => { return axios.post(`${base}/login`, params).then(res => res.data); };
+export const requestLogin = params => {
+    console.log("123213:"+process.env.NODE_ENV);
+    return axios.post(`${base}/login`, params).then(res => res.data); };
 
 export const getUserList = params => { return axios.get(`${base}/user/list`, { params: params }); };
 

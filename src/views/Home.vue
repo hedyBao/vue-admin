@@ -132,7 +132,7 @@
 				this.sysUserName = user.name || '';
 				this.sysUserAvatar = user.avatar || '';
 			}
-Git
+
 		}
 	}
 
